@@ -4,7 +4,7 @@ A task distribution, which assign tasks to specific executors
 
 ## How to use
 
-Just view tests in [`test`](src/test/java) folder for example.
+Just view tests in [`test`](src/test/java/com/miti99/taskbus/bus/impl) folder for example.
 
 ## Caution
 
