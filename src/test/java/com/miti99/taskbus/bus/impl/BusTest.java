@@ -30,4 +30,10 @@ class BusTest {
     Bus bus = new TaskBus();
     submitTasks(bus);
   }
+
+  @Test
+  void testAkkaBus() {
+    Bus bus = new AkkaBus();
+    submitTasks(bus);
+  }
 }

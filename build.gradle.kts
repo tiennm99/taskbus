@@ -21,12 +21,14 @@ idea {
 
 repositories {
     mavenCentral()
+    maven("https://repo.akka.io/maven")
 }
 
 dependencies {
     annotationProcessor("org.projectlombok:lombok:1.18.36")
     compileOnly("org.projectlombok:lombok:1.18.36")
 
+    implementation("com.typesafe.akka:akka-actor_3:2.10.0")
     implementation("org.slf4j:slf4j-simple:2.0.16")
 
     testAnnotationProcessor("org.projectlombok:lombok:1.18.36")
