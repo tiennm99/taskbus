@@ -5,11 +5,11 @@ import com.miti99.taskbus.task.Task;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ManualBus implements Bus {
+public class TaskBus implements Bus {
   private final ExecutorService[] executors;
   private final int poolSize;
 
-  public ManualBus(int poolSize) {
+  public TaskBus(int poolSize) {
     this.poolSize = poolSize;
     executors = new ExecutorService[poolSize];
     for (int i = 0; i < poolSize; i++) {
@@ -17,7 +17,7 @@ public class ManualBus implements Bus {
     }
   }
 
-  public ManualBus() {
+  public TaskBus() {
     this(Runtime.getRuntime().availableProcessors());
   }
 
